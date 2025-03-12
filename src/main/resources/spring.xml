@@ -7,8 +7,15 @@
     <!--<bean id="alien" class="com.onkar.Alien" scope="prototype"></bean>-->
 
     <bean id="alien" class="com.onkar.Alien">
-       <property name="age" value="21"></property>
-        <property name="laptop" ref="lap"></property>
+
+       <!-- <constructor-arg value="23"></constructor-arg>
+        <constructor-arg ref="lap"></constructor-arg>-->
+
+        <constructor-arg index="0" value="34"></constructor-arg>
+        <constructor-arg index="1" ref="lap"></constructor-arg>
+
+       <!--<property name="age" value="21"></property>
+        <property name="laptop" ref="lap"></property>-->
     </bean>
 
     <bean id="lap" class="com.onkar.Laptop"></bean>
