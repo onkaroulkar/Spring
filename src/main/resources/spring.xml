@@ -6,18 +6,23 @@
 
     <!--<bean id="alien" class="com.onkar.Alien" scope="prototype"></bean>-->
 
-    <bean id="alien" class="com.onkar.Alien">
+    <bean id="alien" class="com.onkar.Alien" autowire="byType">
 
        <!-- <constructor-arg value="23"></constructor-arg>
         <constructor-arg ref="lap"></constructor-arg>-->
 
-        <constructor-arg index="0" value="34"></constructor-arg>
-        <constructor-arg index="1" ref="lap"></constructor-arg>
+        <!--<constructor-arg index="0" value="34"></constructor-arg>
+        <constructor-arg index="1" ref="lap"></constructor-arg>-->
 
        <!--<property name="age" value="21"></property>
         <property name="laptop" ref="lap"></property>-->
+
+        <!--<property name="age" value="41"></property>
+        <property name="com" ref="lap"></property>-->
     </bean>
 
-    <bean id="lap" class="com.onkar.Laptop"></bean>
-
+   <!-- <bean id="lap" class="com.onkar.Laptop"></bean>-->
+   <!-- <bean id="lap" class="com.onkar.Laptop"></bean>-->
+   <!-- <bean id="des" class="com.onkar.Desktop"></bean>-->
+    <bean id="com" class="com.onkar.Desktop"></bean>
 </beans>
