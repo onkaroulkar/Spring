@@ -17,12 +17,13 @@
        <!--<property name="age" value="21"></property>
         <property name="laptop" ref="lap"></property>-->
 
-        <!--<property name="age" value="41"></property>
-        <property name="com" ref="lap"></property>-->
+        <property name="age" value="41"></property>
+        <property name="com" ref="com"></property>
     </bean>
 
-   <!-- <bean id="lap" class="com.onkar.Laptop"></bean>-->
+    <bean id="lap" class="com.onkar.Laptop"></bean>
    <!-- <bean id="lap" class="com.onkar.Laptop"></bean>-->
    <!-- <bean id="des" class="com.onkar.Desktop"></bean>-->
-    <bean id="com" class="com.onkar.Desktop"></bean>
+    <bean id="com" class="com.onkar.Desktop" lazy-init="true"></bean>
+<!--    <bean id="com1   " class="com.onkar .Laptop" primary="true"></bean>-->
 </beans>
