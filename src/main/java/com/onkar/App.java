@@ -10,23 +10,16 @@ public class App
     {
 
         ApplicationContext context = new AnnotationConfigApplicationContext(AppConfig.class);
-       // Desktop dsk = context.getBean("beast",Desktop.class);
+        Alien obj = context.getBean(Alien.class);
+        System.out.println(obj.getAge());
+        obj.code();
+        /*Laptop lap = context.getBean(Laptop.class);
+        Laptop lap1 = context.getBean(Laptop.class);*/
+
+       /* Desktop dsk = context.getBean("beast",Desktop.class);
         Desktop dsk = context.getBean("desktop",Desktop.class);
         Desktop dsk1 = context.getBean("desktop",Desktop.class);
-        dsk.compile();
-
-
-
-
-
-
-
-
-
-
-
-
-
+        dsk.compile();*/
 
         /*ApplicationContext context = new ClassPathXmlApplicationContext("spring.xml");
         Alien obj = (Alien) context.getBean("alien");

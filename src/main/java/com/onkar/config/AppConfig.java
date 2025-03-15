@@ -1,17 +1,30 @@
 package com.onkar.config;
 
-import com.onkar.Desktop;
-import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.context.annotation.Scope;
 
 @Configuration
+@ComponentScan("com.onkar")
 public class AppConfig {
+
+   /* @Bean
+    public Alien alien(Computer com){      // @Qualifier("laptop")
+        Alien alien = new Alien();
+        alien.setAge(34);
+        alien.setCom(com);
+        return alien;
+    }
 
    // @Bean(name={"com","beast"})
     @Bean
-    @Scope("prototype")
+    // @Scope("prototype")
     public Desktop desktop(){
         return new Desktop();
     }
+
+    @Bean
+    @Primary
+    public Laptop laptop(){
+        return new Laptop();
+    }*/
 }
